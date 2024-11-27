@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ChatAIConsole", "ChatAIConsole", "{E3C47F3D-57C3-4AD7-82FA-367191D41E05}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ChatAI.Console", "ChatAI.Console", "{E3C47F3D-57C3-4AD7-82FA-367191D41E05}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatAI.Console", "ChatAI.Console\ChatAI.Console.csproj", "{86755C25-D919-47AB-8056-CE87A343C60D}"
 EndProject
@@ -11,6 +11,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{1FB72045-8
 	ProjectSection(SolutionItems) = preProject
 		todo.txt = todo.txt
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ChatAI.Web", "ChatAI.Web", "{F4755D49-864E-4EBC-88EB-5D46AFDDE7F2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ChatAI.Web.Api", "ChatAI.Web.Api", "{DF65DAF8-762A-4D0B-8D0C-0A9C3E53BB40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatAI.Web.Api", "ChatAI.Web\ChatAI.Web.Api\ChatAI.Web.Api.csproj", "{BA41ED8E-DEC5-4962-A6BE-171F9D950A5C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,12 +28,18 @@ Global
 		{86755C25-D919-47AB-8056-CE87A343C60D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{86755C25-D919-47AB-8056-CE87A343C60D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{86755C25-D919-47AB-8056-CE87A343C60D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA41ED8E-DEC5-4962-A6BE-171F9D950A5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA41ED8E-DEC5-4962-A6BE-171F9D950A5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA41ED8E-DEC5-4962-A6BE-171F9D950A5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA41ED8E-DEC5-4962-A6BE-171F9D950A5C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{86755C25-D919-47AB-8056-CE87A343C60D} = {E3C47F3D-57C3-4AD7-82FA-367191D41E05}
+		{DF65DAF8-762A-4D0B-8D0C-0A9C3E53BB40} = {F4755D49-864E-4EBC-88EB-5D46AFDDE7F2}
+		{BA41ED8E-DEC5-4962-A6BE-171F9D950A5C} = {DF65DAF8-762A-4D0B-8D0C-0A9C3E53BB40}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {381ABB03-9FAF-462E-A1F9-AC2772E4DEB4}
