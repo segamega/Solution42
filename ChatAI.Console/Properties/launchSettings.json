@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "ChatAI.Console": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}
