@@ -1,4 +1,7 @@
 
+using ChatAI.Lib.Application.Implementation;
+using ChatAI.Lib.Application.Interfaces;
+
 namespace ChatAI.Web.Api
 {
     public class Program
@@ -8,6 +11,7 @@ namespace ChatAI.Web.Api
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
+            builder.Services.AddSingleton<IConversationService, ConversationService>();
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

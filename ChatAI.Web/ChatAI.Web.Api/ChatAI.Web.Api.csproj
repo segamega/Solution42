@@ -14,4 +14,8 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\ChatAI.Lib\ChatAI.Lib.Application\ChatAI.Lib.Application.csproj" />
+  </ItemGroup>
+
 </Project>
