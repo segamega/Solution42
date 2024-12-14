@@ -1,6 +1,9 @@
 
 using ChatAI.Lib.Application.Implementation;
 using ChatAI.Lib.Application.Interfaces;
+using Microsoft.Extensions.Options;
+using Microsoft.OpenApi.Models;
+using System.Reflection;
 
 namespace ChatAI.Web.Api
 {
@@ -16,7 +19,12 @@ namespace ChatAI.Web.Api
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
-            builder.Services.AddSwaggerGen();
+            builder.Services.AddSwaggerGen(options =>
+            {
+                options.SwaggerDoc("v1", new OpenApiInfo { Title = "ChatAI.Web.Api", Version = "v1" });
+                options.DocInclusionPredicate((docName, description) => true);
+                options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, $"{Assembly.GetExecutingAssembly().GetName().Name}.xml"));
+            });
 
             var app = builder.Build();
 

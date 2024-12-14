@@ -26,11 +26,6 @@ public class ConversationService : IConversationService
         _chatCompletionService = _kernel.GetRequiredService<IChatCompletionService>();
         _chatHistory = [];
     }
-    public async Task<Guid> PrepareConversation(Guid? conversationGuid)
-    {
-        // TODO: Заменить реализацию на проверку Guid в БД и загрузку из базы.
-        return new System.Guid();
-    }
 
     public async Task<string> GetResponseAsync(Guid conversationGuid, CancellationToken cancellationToken)
     {

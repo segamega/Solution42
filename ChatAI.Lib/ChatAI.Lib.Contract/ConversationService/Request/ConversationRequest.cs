@@ -1,4 +1,4 @@
-﻿namespace ChatAI.Web.Api.Requests;
+﻿namespace ChatAI.Lib.Contract.ConversationService.Request;
 
 /// <summary>
 /// Запрос с сохранением в историю сообщений.
