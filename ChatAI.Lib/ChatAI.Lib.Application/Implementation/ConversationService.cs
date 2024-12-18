@@ -27,7 +27,7 @@ public class ConversationService : IConversationService
         _chatHistory = [];
     }
 
-    public async Task<string> GetResponseAsync(Guid conversationGuid, CancellationToken cancellationToken)
+    public async Task<string> GetResponseAsync(CancellationToken cancellationToken)
     {
         var response = "";
         await foreach (var item in
@@ -39,9 +39,9 @@ public class ConversationService : IConversationService
         return response;
     }
 
-    public Task SendCommand(Guid conversationGuid, string userPrompt)
+    public Task SendCommand(string userPrompt, AuthorRole role)
     {
-        _chatHistory.Add(new ChatMessageContent(AuthorRole.User, userPrompt));
+        _chatHistory.Add(new ChatMessageContent(role, userPrompt));
         return Task.CompletedTask;
     }
 }
